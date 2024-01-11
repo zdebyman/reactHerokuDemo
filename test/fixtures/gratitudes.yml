@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  prompt1: MyText
+  answer1: MyText
+  prompt2: MyText
+  answer2: MyText
+  prompt3: MyText
+  answer3: MyText
+
+two:
+  title: MyString
+  prompt1: MyText
+  answer1: MyText
+  prompt2: MyText
+  answer2: MyText
+  prompt3: MyText
+  answer3: MyText
