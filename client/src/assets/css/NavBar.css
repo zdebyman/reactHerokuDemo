@@ -1,12 +1,15 @@
+
 .nav-bar {
   background-color: black;
-  width: 100%;
   display: flex;
-  padding: 0 auto;
   justify-content: space-between;
   align-items: center;
+
+  padding: 0 2rem 0 2rem;
 }
+
 .nav-header {
+  color: white;
   font-size: 2.5rem;
   font-weight: 400;
 }
