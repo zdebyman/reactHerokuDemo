@@ -1,0 +1,1 @@
+export const API_URL = process.env.NODE_ENV === 'production' ? 'https://guarded-waters-46086-d7f4b67a71fa.herokuapp.com/ ' : 'http://127.0.0.1:3000/api/gratitudes'

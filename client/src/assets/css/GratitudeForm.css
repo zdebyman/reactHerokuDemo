@@ -1,0 +1,79 @@
+.form-container {
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #aaa;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #f76292;
+}
+
+input[type="file"] {
+  background: transparent;
+  color: #fff;
+  border: 2px dashed #555;
+  padding: 10px;
+  text-align: center;
+  display: block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+input[type="file"]:hover {
+  border-color: #f76292;
+}
+
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background: #f76292;
+}
+
+@media (max-width: 600px) {
+  .form-container {
+    width: 90%;
+  }
+}
+
+.image-preview {
+  width: 100%; /* Set the width to match the form */
+  margin-top: 10px; /* Add some spacing above the image */
+  border-radius: 4px; /* Optional: Rounds the corners of the image */
+}
