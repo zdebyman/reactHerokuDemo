@@ -11,7 +11,6 @@ function GratitudesList() {
   useEffect(() => {
     async function loadGratitudes() {
       try {
-        console.log("here we are")
         const data = await fetchAllGratitudes();
         setGratitudes(data);
         setLoading(false);
