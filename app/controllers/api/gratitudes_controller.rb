@@ -12,6 +12,7 @@ class Api::GratitudesController < ApplicationController
       end
     end
 
+    puts "gratitudes_with_images: #{gratitudes_with_images}"
     render json: gratitudes_with_images
   end
 

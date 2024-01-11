@@ -1,8 +1,10 @@
 import { API_URL } from "../constants";
 
 async function fetchAllGratitudes() {
-  const response = await fetch(`${API_URL}`, {mode: 'no-cors'});
+  console.log("fetching all gratitudes")
+  const response = await fetch(`${API_URL}`);
   if (!response.ok) {
+    console.log(response)
     throw new Error(response.statusText);
   }
   return response.json();
