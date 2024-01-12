@@ -7,21 +7,31 @@
   margin: auto;
 }
 
+.prompt {
+  font-weight: 900;
+  font-style: bold;
+}
+
+p {
+  color: #fff;
+  font-size: 1rem;
+}
+
 h2 {
   color: #fff;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 label {
   display: block;
-  margin-bottom: 8px;
+  margin-bottom: 0.5rem;
   color: #aaa;
 }
 
 input[type="text"],
 textarea {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   background: #333;
   border: 1px solid #555;
   color: #fff;
@@ -38,10 +48,10 @@ input[type="file"] {
   background: transparent;
   color: #fff;
   border: 2px dashed #555;
-  padding: 10px;
+  padding: 0.5rem;
   text-align: center;
   display: block;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
   cursor: pointer;
 }
 
@@ -54,7 +64,7 @@ input[type="file"]:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: self-start;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .btn-submit {
@@ -71,7 +81,7 @@ button {
   background: #333;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 0.5rem 1rem;
   cursor: pointer;
   border-radius: 4px;
   font-weight: bold;

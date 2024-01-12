@@ -36,7 +36,8 @@ function GratitudesList() {
   return (
     <div className="gratitudes-list">
       {gratitudes.map(gratitude => (
-          <div key={gratitude.id} className="gratitude-container">
+        <Link to={`/gratitudes/${gratitude.id}`} key={gratitude.id} className="gratitude-link">
+          <div className="gratitude-container">
             <div className="gratitude-image-container">
               {gratitude.image_url ? (
                 <img
@@ -49,11 +50,10 @@ function GratitudesList() {
               )}
             </div>
             <h2>
-              <Link to={`/gratitudes/${gratitude.id}`} className="gratitude-title">
-                {gratitude.title}
-              </Link>
+              {gratitude.title}
             </h2>
           </div>
+        </Link>
       ))} 
   </div>);
 }

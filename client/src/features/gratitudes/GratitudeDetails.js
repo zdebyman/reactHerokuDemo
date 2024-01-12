@@ -33,10 +33,22 @@ function GratitudeDetails() {
   return (
     <div>
       <h2>{gratitude.title}</h2>
-      <img src={gratitude.image_url} alt={gratitude.title} className="gratitude-image" />
-      <p>{gratitude.prompt1 + " " + gratitude.answer1}</p>
-      <p>{gratitude.prompt2 + " " + gratitude.answer2}</p>
-      <p>{gratitude.prompt3 + " " + gratitude.answer3}</p>
+      <div className="gratitude-image-container">
+        {gratitude.image_url ? (
+          <img
+            src={gratitude.image_url}
+            alt={gratitude.title}
+            className="gratitude-image"
+          />
+        ) : (
+          <div className="gratitude-image-stub" />
+        )}
+      </div>
+
+      <p><span className="prompt">{gratitude.prompt1}</span> {gratitude.answer1}</p>
+      <p><span className="prompt">{gratitude.prompt2}</span> {gratitude.answer2}</p>
+      <p><span className="prompt">{gratitude.prompt3}</span> {gratitude.answer3}</p>
+
       <Link to={`/gratitudes/${gratitude.id}/edit`}>Edit</Link>
       {" | "}
       <Link to="/">Back to Gratitudes</Link>

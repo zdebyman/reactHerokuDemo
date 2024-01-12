@@ -1,22 +1,20 @@
 .gratitude-image {
   width: 20rem;
-  height: auto;
+  height: 15rem;
   object-fit: cover;
   border-radius: 10px;
-  border: 1px solid #ccc;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
 .gratitude-image-stub {
-  width: 21rem;
-  height: 13rem;
+  width: 20rem;
+  height: 15rem;
   border-radius: 10px;
   border: 1px solid #ccc;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   background-color: #aaa;
 }
 
-/* Needs to center the image or image stub inside of it. */
 .gratitude-image-container {
   display: flex;
   justify-content: center;
