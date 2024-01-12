@@ -12,6 +12,11 @@
   font-style: bold;
 }
 
+a {
+  color: #fff;
+  font-size: 1rem;
+}
+
 p {
   color: #fff;
   font-size: 1rem;

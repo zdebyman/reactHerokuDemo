@@ -3,13 +3,14 @@
   flex-direction: column;
   justify-content: space-between;
   gap: 1rem;
-  padding: 1rem;
+  padding: 3rem;
 }
 
 .gratitude-container {
-  border: #1a1a1a 1px solid;
+  background-color: #1a1a1a ;
+  border: #fff1 px solid;
   color: #fff;
-  padding: 20px;
+  padding: 1rem;
   border-radius: 8px;
   max-width: 500px;
   margin: auto;
