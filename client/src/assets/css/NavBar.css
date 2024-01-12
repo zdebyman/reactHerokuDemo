@@ -1,4 +1,3 @@
-
 .nav-bar {
   background-color: black;
   display: flex;
@@ -30,4 +29,15 @@
   font-size: 1rem;
   color: #FF90F8;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 0 0.5rem; /* Reduces padding on small screens */
+  }
+
+  .nav-link {
+    padding: 0.5rem; /* Reduces padding on the links */
+    font-size: 0.9rem; /* Reduces the font size */
+  }
 }
