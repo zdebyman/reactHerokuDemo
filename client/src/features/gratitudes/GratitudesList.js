@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { deleteGratitude, fetchAllGratitudes } from "../../services/gratitudeService";
 import "../../assets/css/GratitudeImage.css";
+import '../../assets/css/GratitudesList.css';
 
 function GratitudesList() {
   const [gratitudes, setGratitudes] = useState([]);
@@ -33,32 +34,27 @@ function GratitudesList() {
   };
 
   return (
-  <div>
-    {gratitudes.map(gratitude => (
-        <div key={gratitude.id} className="gratitude-container">
-          <h2>
-            <Link to={`/gratitudes/${gratitude.id}`} className="gratitude-title">
-              {gratitude.title}
-            </Link>
-          </h2>
-          <div className="gratitude-image-container">
-            {gratitude.image_url ? (
-              <img
-                src={gratitude.image_url}
-                alt={gratitude.title}
-                className="gratitude-image"
-              />
-            ) : (
-              <div className="gratitude-image-stub" />
-            )}
+    <div className="gratitudes-list">
+      {gratitudes.map(gratitude => (
+          <div key={gratitude.id} className="gratitude-container">
+            <div className="gratitude-image-container">
+              {gratitude.image_url ? (
+                <img
+                  src={gratitude.image_url}
+                  alt={gratitude.title}
+                  className="gratitude-image"
+                />
+              ) : (
+                <div className="gratitude-image-stub" />
+              )}
+            </div>
+            <h2>
+              <Link to={`/gratitudes/${gratitude.id}`} className="gratitude-title">
+                {gratitude.title}
+              </Link>
+            </h2>
           </div>
-          <div className="gratitude-links">
-            <Link to={`/gratitudes/${gratitude.id}/edit`}>Edit</Link>
-            {" | "}
-            <button onClick={() => deleteGratitudeHandler(gratitude.id)}>Delete</button>
-          </div>
-        </div>
-    ))} 
+      ))} 
   </div>);
 }
 

@@ -30,28 +30,8 @@
   }
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
   }
-}
-
-.link {
-  border: #fff 1px solid;
-  padding: 1rem;
-  background-color: #FF90F8;
-  font-size: 1rem;
-  color: black;
-  text-decoration: none;
-}
-
-.link:hover {
-  border: #fff 1px solid;
-  padding: 1rem;
-  background-color: black;
-  font-size: 1rem;
-  color: #FF90F8;
-  text-decoration: none;
 }

@@ -6,9 +6,9 @@ function NavBar() {
     <nav className="nav-bar">
       <h1 className="nav-header">Gratitude</h1>
       <div>
-        <Link className="link" to="/">My Gratitutes</Link>
+        <Link className="nav-link" to="/">My Gratitutes</Link>
         {" | "}
-        <Link className="link" to="/new">+</Link>
+        <Link className="nav-link" to="/new">+</Link>
       </div>
     </nav>
   );

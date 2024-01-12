@@ -1,0 +1,14 @@
+.gratitudes-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.gratitude-container {
+  border: #1a1a1a 1px solid;
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: auto;
+}
