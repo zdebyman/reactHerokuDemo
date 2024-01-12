@@ -19,9 +19,9 @@ function NewGratitudeForm() {
 
   return (
     <GratitudeForm
-      headerText="Create a New Gratitude"
+      headerText="Today's Gratitude"
       onSubmit={handleCreateSubmit}
-      buttonText="Create Gratitude"
+      buttonText="Add"
     />
   );
 }

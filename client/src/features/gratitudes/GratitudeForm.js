@@ -52,16 +52,18 @@ function GratitudeForm({ gratitude, headerText, onSubmit, buttonText }) {
     <div>
       <h2>{headerText}</h2>
       <form
+        className="form-container"
         onSubmit={(e) => {
           e.preventDefault();
           onSubmit(formData);
         }}
       >
-        <div>
-          <label htmlFor="title">Title:</label>
+        <div className="prompt-container">
+          <label htmlFor="title">Title</label>
           <input
             id="title"
             type="text"
+            className="text-input"
             value={formData.title}
             onChange={(e) =>
               setFormData({
@@ -71,10 +73,13 @@ function GratitudeForm({ gratitude, headerText, onSubmit, buttonText }) {
             }
           />
         </div>
-        <div>
+
+        <div className="prompt-container">
           <label htmlFor="answer1">{formData.prompt1}</label>
           <textarea
             id="answer1"
+            cols="60"
+            rows="5"
             value={formData.answer1}
             onChange={(e) =>
               setFormData({
@@ -84,34 +89,39 @@ function GratitudeForm({ gratitude, headerText, onSubmit, buttonText }) {
             }
           />
         </div>
-        <div>
-          <label htmlFor="answer2">{formData.prompt2}</label>
-          <textarea
-            id="answer2"
-            value={formData.answer2}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                answer2: e.target.value,
-              })
-            }
-          />
+
+        <div className="prompt-container">
+            <label htmlFor="answer2">{formData.prompt2}</label>
+            <textarea
+              id="answer2"
+              cols="60"
+              rows="5"
+              value={formData.answer2}
+              onChange={(e) =>
+                setFormData({
+                  ...formData,
+                  answer2: e.target.value,
+                })
+              }
+            />
         </div>
-        <div>
-          <label htmlFor="answer3">{formData.prompt3}</label>
-          <textarea
-            id="answer3"
-            value={formData.answer3}
-            onChange={(e) =>
-              setFormData({
-                ...formData,
-                answer3: e.target.value,
-              })
-            }
-          />
+        <div className="prompt-container">
+            <label htmlFor="answer3">{formData.prompt3}</label>
+            <textarea
+              id="answer3"
+              cols="60"
+              rows="5"
+              value={formData.answer3}
+              onChange={(e) =>
+                setFormData({
+                  ...formData,
+                  answer3: e.target.value,
+                })
+              }
+            />
         </div>
 
-        <div>
+        <div className="prompt-container">
           <label htmlFor="image">Picture of the day (optional)</label>
           <input
             id="image"
@@ -124,7 +134,7 @@ function GratitudeForm({ gratitude, headerText, onSubmit, buttonText }) {
           )}
         </div>
         <div>
-          <button type="submit">{buttonText}</button>
+          <button type="submit" className="btn-submit">{buttonText}</button>
         </div>
       </form>
     </div>

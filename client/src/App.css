@@ -39,7 +39,7 @@
 }
 
 .link {
-  border: white 1px solid;
+  border: #fff 1px solid;
   padding: 1rem;
   background-color: #FF90F8;
   font-size: 1rem;
@@ -48,7 +48,7 @@
 }
 
 .link:hover {
-  border: white 1px solid;
+  border: #fff 1px solid;
   padding: 1rem;
   background-color: black;
   font-size: 1rem;

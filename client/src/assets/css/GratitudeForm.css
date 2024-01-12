@@ -21,7 +21,6 @@ label {
 input[type="text"],
 textarea {
   width: 100%;
-  padding: 10px;
   margin-bottom: 20px;
   background: #333;
   border: 1px solid #555;
@@ -32,7 +31,7 @@ textarea {
 input[type="text"]:focus,
 textarea:focus {
   outline: none;
-  border-color: #f76292;
+  border-color: #FF90F8;
 }
 
 input[type="file"] {
@@ -47,7 +46,25 @@ input[type="file"] {
 }
 
 input[type="file"]:hover {
-  border-color: #f76292;
+  border-color: #FF90F8;
+}
+
+.prompt-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: self-start;
+  margin-bottom: 20px;
+}
+
+.btn-submit {
+  background: #FF90F8;
+  color: black;
+}
+
+.btn-submit:hover {
+  background: #FF90F8;
+  color: #fff;
 }
 
 button {
@@ -63,7 +80,7 @@ button {
 }
 
 button:hover {
-  background: #f76292;
+  background: #FF90F8;
 }
 
 @media (max-width: 600px) {
